@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Conditional Statement
+        Control Statement
+    -->
+
+    <!-- What is Conditional Statement?
+        Rendering any output based on condition.
+        
+        if & else
+        syntax:
+        if(condition){ // if is the starting statment , if can be used multiple times
+            code
+        }
+        else{ // else is the ending statement
+            code
+        }
+        
+        switch-case
+        Syntax
+        switch(variable){
+            case 1: code
+            case 2: code
+            case 3: code
+            ....
+            ....
+            ....
+            default : code
+        }
+    -->
+
+    <!-- 
+        What is Control-FLow Statement?
+        This is loop statement
+        1. for loop
+        Syntax:
+        for(start;stop;step){
+            code
+        }
+
+        2. while loop
+        Syntax
+        start;
+        while(stop){
+            code;
+            step;
+        }
+
+        3. do-while loop
+        Syntax:
+        start;
+        do{
+            code
+            step
+        }while(stop)
+    -->
+
+    <!-- 
+        Nested Loops
+
+        Outer Loop 1
+            Inner Loop 1
+            Inner Loop 2
+            Inner Loop 3
+        Outer Loop 2
+            Inner Loop 1
+            Inner Loop 2
+            Inner Loop 3
+        Outer Loop 3
+            Inner Loop 1
+            Inner Loop 2
+            Inner Loop 3
+    -->
+
+    <script>
+        // let age=23;
+        // if(age>=19){ // yeh
+        //     console.log("Eligible")
+        // }
+        // else if(age>=13 && age<=18){ // varna yeh
+        //     console.log(`Eligible in ${19-age} years`)
+        // }
+        // else{ // nhii toh yeh
+        //     console.log("Not Eligible")
+        // }
+
+        // let yearQuarter=1;
+        // switch(yearQuarter){
+        //     case 1: console.log("JAN,FEB,MAR")
+        //     break;
+        //     case 2: console.log("APR,MAY,JUNE")
+        //     break;
+        //     case 3: console.log("JUL,AUG,SEPT")
+        //     break;
+        //     case 4: console.log("OCT,NOV,DEC")
+        //     break;
+        //     default: console.log("No Quarter Found in a YEAR!!!!")
+        // }
+
+        // Infinite loop
+        // for(let i=1;;i++){
+        //     console.log(i)
+        // }
+
+        // for(let i=1;i<=10;i++){
+        //     console.log(i)
+        // }
+
+        // let i=1
+        // while(i<=10){
+        //     console.log(i)
+        //     i++
+        // }
+
+        // let i=1
+        // do{
+        //     console.log(i)
+        //     i++
+        // }while(i<=10)
+
+        let outer=parseInt(prompt("Enter value for Outer"))
+        let inner=parseInt(prompt("Enter value for Inner"))
+
+        for(let i=1;i<=outer;i++){
+            console.log("Outer Loop",i)
+            for(let j=1;j<=inner;j++){
+                console.log("\n Inner Loop",j)
+            }
+        }
+        
+    </script>
+</body>
+</html>

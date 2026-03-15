@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second JS Class</title>
+  </head>
+  <body>
+    <script>
+      // Chapter No 3: Operators & Type of Operators
+      // Operator means operation between two or more operands.
+
+      // 1. Arthmetic Operator :+,-,*,/,%,**
+    //   let a = parseInt(prompt("Enter a"));
+    //   let b = parseInt(prompt("Enter b"));
+    //   let c = parseInt(prompt("Enter c"));
+
+      // console.log(a+b)
+      // console.log(a-b)
+      // console.log(a*b)
+      // console.log(a/b) // Qutient
+      // console.log(a%b) // Remainder
+      // console.log(a**b)
+
+      // 2. Relational Operator : Relation b/w two or more operands , This will always return the answer in boolean form.
+      // <,>,<=,>=,==,!=,===
+      // console.log(a<b)
+      // console.log(a>b)
+      // console.log(a>=b)
+      // console.log(a<=b)
+      // console.log(a==b)
+      // console.log(a!=b)
+
+      // Diffrence b/w == & ===
+      // in == it only matches the value , whereas in === ity matches value & datatype.
+      // let a=10
+      // let b="10"
+
+      // console.log(a==b)
+      // console.log(a===b)
+
+      // 3. Logical Operator : Finds the relation b/w two or more conditions
+      // && , || , !
+
+      // && means all the condition must be true , if single condition is false whole result is false.
+      // I        II      Result
+      // T        T           T
+      // T        F           F
+      // F        T           F
+      // F        F           F
+    //   console.log(a < b && b > c);
+
+      // || means if single condition is true , then result is true.
+      // I        II      Result
+      // T        T           T
+      // T        F           T
+      // F        T           T
+      // F        F           F
+    //   console.log(a < b || b > c);
+
+      // ! : it reverse the decision.
+    //   console.log(!(a < b || b > c));
+
+      // 4. Unary Operator : Increase or decrease any variable value from memory.
+      // Increment & Decrement (pre & post) : Increasing or decreasing value by 1.
+      // post-inc/dec : var++ / var--
+      // pre-inc/dec : ++var / --var
+
+    //   let a=10
+    //   let b=a++ // post increment
+    //   let b=a-- // post decrement
+    // let b=++a; // pre increment
+    // let b=--a; // pre decrement
+
+
+      // Re-Intalize
+    //   b=a;
+
+    //   console.log(b)
+    //   console.log(a)
+
+
+      // 5. Assignment Operator
+    //   It means assigning the value from right to left.
+    // =,+=,-=,*=,/=,%=,**=
+    // a=20
+    // a+=10// a=a+20
+    // a*=8
+    // a/=3
+    // a%=7
+    // a**=4
+    // console.log(a+20);
+    // console.log(a);
+
+      // 6. Ternary Operator : A small conditional formatting
+    let age=15;
+    // condition? statement1(if true):statement 2(if false)
+    (age>=19)?console.log("Eligible"):console.log("Not Eligible.")
+    </script>
+  </body>
+</html>

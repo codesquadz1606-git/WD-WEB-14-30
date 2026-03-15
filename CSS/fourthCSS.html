@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+
+        animation-name: moveBox;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes moveBox {
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+
+        30%{
+            top: 100px;
+            left: 0px;
+        }
+
+        60%{
+            top: 100px;
+            left :100px;
+        }
+
+        90%{
+            top: 0px;
+            left: 100px;
+        }
+
+        100%{
+            top: 0px;
+            left: 0px;
+        }
+    }
+
+    .carousel{
+        width: 90%;
+        height: 700px;
+        margin: auto;
+        border-radius: 50px;
+        border: 2px solid black;
+
+        animation: carousel 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes carousel {
+        0%{
+            background-image: url(./asset/1.jpg);
+            background-size: cover;
+        }
+        25%{
+            background-image: url(./asset/2.jpg);
+            background-size: cover;
+        }
+        50%{
+            background-image: url(./asset/3.webp);
+            background-size: cover;
+        }
+        75%{
+            background-image: url(./asset/4.jpg);
+            background-size: cover;
+        }
+        100%{
+            background-image: url(./asset/5.jpg);
+            background-size: cover;
+        }
+    }
+</style>
+<body>
+    <!-- <div class="box"></div> -->
+
+    <div class="carousel">
+
+    </div>
+</body>
+</html>

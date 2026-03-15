@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth Class</title>
+</head>
+<style>
+    .bg1,.bg2,.bg3,.bg4{
+        text-align: center;
+        display: none;
+    }
+
+    .bg1{
+        background-color: red;
+    }
+    .bg2{
+        background-color: green;
+    }
+    .bg3{
+        background-color: blue;
+    }
+    .bg4{
+        background-color: yellow;
+    }
+
+    @media (min-width:1901px) {
+        .bg1,.bg2,.bg3,.bg4{
+            display: block;
+        }
+    }
+    @media (min-width:1500px) and (max-width:1900px) {
+        .bg1{
+            display: block;
+        }
+    }
+    @media (min-width:1200px) and (max-width:1500px) {
+        .bg2{
+            display: block;
+        }
+    }
+    @media (min-width:1000px) and (max-width:1200px) {
+        .bg3{
+            display: block;
+        }
+    }
+    @media (min-width:700px) and (max-width:1000px) {
+        .bg4{
+            display: block;
+        }
+    }
+
+    @media (max-width:699px) {
+        .bg1,.bg2,.bg3,.bg4{
+            display: block;
+        }
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+
+    .acc{
+        display: flex;
+        font-size: 1.5rem;
+        gap: 10px;
+    }
+
+    .new{
+        display: none;
+    }
+
+    @media (max-width:1050px){
+        .new{
+            display: block;
+        }
+        .old{
+            display: none;
+            margin-top: -10px;
+        }
+    }
+
+    .con{
+        width:250%;
+        display: flex;
+        gap: 30px;
+        /* flex-wrap: wrap; */
+    }
+
+    .box{
+        width: 200px;
+        height: 500px;
+        border: 2px solid black;
+        border-radius: 30px;
+
+    }
+</style>
+<body>
+    <!-- 
+        Media Query
+    -->
+    <!-- <div class="bg1">
+        <h1>This heading 1</h1>
+    </div>
+    <div class="bg2">
+        <h1>This heading 2</h1>
+    </div>
+    <div class="bg3">
+        <h1>This heading 3</h1>
+    </div>
+    <div class="bg4">
+        <h1>This heading 4</h1>
+    </div> -->
+
+    <!-- <div class="navbar">
+        <div class="logo">
+            <h1 class="old">loop earplugs</h1>
+            <div class="new">ham</div>
+        </div>
+        
+        <div class="navigation">
+            <ul class="old">
+                <li class="old">Shop</li>
+                <li class="old">Best Seller</li>
+                <li class="old">Help me Choose</li>
+                <li class="old">FAQ</li>
+            </ul>
+            <h1 class="new">loop earplugs</h1>
+        </div>
+        <div class="acc">
+            <div class="flag">flag</div>
+            <div class="account">Account</div>
+            <div class="cart">CART</div>
+        </div>
+    </div> -->
+
+    <div class="con">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis iusto quas soluta magni voluptatem necessitatibus debitis deserunt ipsa ipsum corporis quia officia amet minima doloribus ex repudiandae consectetur nesciunt neque labore? Commodi numquam sequi veniam voluptatibus est quod repellat nostrum, magni ratione. Doloribus, illo quam dicta quidem placeat maiores, aliquid porro voluptatibus nostrum voluptate iste nesciunt delectus. Optio ea unde excepturi aliquam itaque neque quae aut labore earum non repellendus eius suscipit commodi provident, repudiandae corporis! Dolorum, veritatis aperiam! Modi natus praesentium qui quibusdam nulla blanditiis dolores ullam delectus laudantium minus! Nemo possimus inventore fugiat impedit nihil recusandae, nam cum assumenda esse corporis, odio quae, odit reprehenderit facere distinctio repudiandae dolorem sit repellendus id atque accusamus? Quas enim veritatis iure, tenetur recusandae perspiciatis quam voluptatem autem ut nisi assumenda molestias, impedit optio consequatur, fugit doloribus. Harum modi vel dolor facere quibusdam numquam odit sit soluta hic perferendis. Beatae vero nam error voluptates impedit dicta est! Quia quam, reprehenderit unde eveniet eos reiciendis recusandae beatae, est mollitia minus atque illum debitis praesentium, repudiandae perferendis officiis itaque ratione minima. Consequuntur beatae quos ad, veniam in dolore maiores et quae voluptate perspiciatis obcaecati, necessitatibus nam! Fugit debitis aspernatur nam velit odit tempora.
+    </p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+#unique{
+    background-color: red;
+}
+
+.first{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+}
+
+p{
+    color: green;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+
+    /* border-width: 10px;
+    border-color: white;
+    border-style: solid; */
+
+    /* Shorthand */
+    /* border:white 10px solid; */
+
+    border-top: 10px solid yellow;
+    border-bottom: 10px solid blue;
+    border-left: 10px solid green;
+    border-right: 10px solid red;
+
+    /* border-radius: 30px; */
+
+    /* border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius:30px ;
+    border-top-left-radius:0px ; */
+
+    /* shorthand */
+
+    border-radius: 0px 30px 0px 30px;
+}
+
+.content{
+    width: 200px;
+    border: 2px solid white;
+    /* padding: 30px; : for all sides */
+    /* padding-left, padding-top, padding-right , padding-bottom  : Ist Method*/
+    /* padding: 30px 100px; */
+    padding: 30px 0px 100px 0px;
+    margin: 30px;
+}

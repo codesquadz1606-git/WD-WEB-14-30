@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+}
+
+.box{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-top: 7px;
+}
+
+.navi ul{
+    display: flex;
+    gap: 30px;
+}
+
+.navi ul li{
+    list-style: none;
+}
+
+.navi ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.navi ul li a:hover{
+    color: blue;
+}
+
+section{
+    height: 1000px;
+    display: flex;
+}
+
+.left-content{
+    width: 37%;
+    height: 1000px;
+    background-color: #E7DACE;
+}
+
+.profile-card{
+    margin-top: 180px;
+    margin-left: 240px;
+    width: 400px;
+    height: 500px;
+    background-color: #F4ECE6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.photo-section{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.line{
+    width: 30%;
+    height: 1px;
+    background-color: blue;
+}
+
+.profile-designation{
+    letter-spacing: 7px;
+}
+
+.icon-box{
+    width: 400px;
+    height: 60px;
+    background-color: white;
+    margin-left: 240px;
+}
+
+.icon-box .images img{
+    width: 30px;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 30px;
+}
+
+.right-content{
+    width: 63%;
+    height: 1000px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.data{
+    width: 55%;
+}
+
+.right-footer{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.call,.write,.follow{
+    text-align: center;
+}
+
+.follow .images img{
+    width: 20px;
+}

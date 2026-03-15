@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second</title>
+</head>
+<body>
+    <!-- Nested List -->
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3
+            <ul>
+                <li>Nested Item 3.1</li>
+                <li>Nested Item 3.2
+                    <ol type="a">
+                        <li>Nested Item 3.2.1</li>
+                        <li>Nested Item 3.2.2</li>
+                        <li>Nested Item 3.2.3</li>
+                        <li>Nested Item 3.2.4</li>
+                    </ol>
+                </li>
+                <li>Nested Item 3.3</li>
+            </ul>
+        </li>
+        <li>Item 4</li>
+    </ol>
+
+    <hr>
+    <ol>
+        <li>Input Device
+            <ol type="a">
+                <li>Direct
+                    <ul type="square">
+                        <li>Scanner</li>
+                    </ul>
+                </li>
+                <li>Indirect
+                    <ul type="square">
+                        <li>Keyboard</li>
+                        <li>Mouse</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>Output Device
+            <ol type="a">
+                <li>Monitor
+                    <ul type="square">
+                        <li>CRT</li>
+                        <li>LCD</li>
+                    </ul>
+                </li>
+                <li>Speaker</li>
+            </ol>
+        </li>
+        <li>Processing Device
+            <ol type="a">
+                <li>ALU
+                    <ul type="square">
+                        <li>Arithmetic Unit</li>
+                        <li>Logic Unit</li>
+                    </ul>
+                </li>
+                <li>CU</li>
+            </ol>
+        </li>
+        <li>Storage Device
+            <ol type="a">
+                <li>Primary Storage
+                    <ul type="square">
+                        <li>RAM
+                            <ol type="I">
+                                <li>SRAM</li>
+                                <li>DRAM</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+    <hr>
+    <h1>Table Tag</h1>
+    <!-- 
+        table tag: <table>
+        table row : tr tag : <tr>
+        table Column : td / th tag : <td> / <th>
+
+        td & th are same but th is used for heading of the table and it is bold by default and text is center aligned.
+        whereas td is used for data of the table and it is normal text and left aligned by default.
+    -->
+
+    <!-- 
+        border attribute : It is used to give border to the table.
+        cellspacing attribute : It is used to add or remove space b/w outer border and inner border of the table.
+        cellpadding attribute : It is used to give space between border and content of the cell.
+    -->
+
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>s.no</th>
+            <th>name</th>
+            <th>city</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Hemant</td>
+            <td>Mumbai</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rahul</td>
+            <td>Delhi</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shivam</td>
+            <td>Bangalore</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1" cellspacing="0">
+        <tr height="50" align="center">
+            <th width="200">No</th>
+            <th width="200">Full Name</th>
+            <th width="200">Position</th>
+            <th width="200">Salary</th>
+        </tr>
+        <tr height="50" align="center">
+            <td>1</td>
+            <td>Hemant</td>
+            <td>Manager</td>
+            <td>50000</td>
+        </tr>
+        <tr height="50" align="center">
+            <td>2</td>
+            <td>Rahul</td>
+            <td>Developer</td>
+            <td>40000</td>
+        </tr>
+        <tr height="50" align="center">
+            <td>3</td>
+            <td>Shivam</td>
+            <td>Designer</td>
+            <td>35000</td>
+        </tr>
+        <tr height="50" align="center">
+            <td>4</td>
+            <td>Arjun</td>
+            <td>Tester</td>
+            <td>30000</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>Advance Table</h1>
+    <!-- 
+        row-merge / vertical-merge : rowspan attribute
+        col-merge / horizontal-merge : colspan attribute
+    -->
+
+    <table border="1">
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1" cellspacing="0" cellpadding="20">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="2" colspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td rowspan="2" colspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>

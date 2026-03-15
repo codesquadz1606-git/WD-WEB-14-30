@@ -1,0 +1,77 @@
+/* When we generate a web page it contains by default spacing */
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+}
+
+.navbar{
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+}
+
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 34px;
+}
+
+.navigation{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+.navigation ul li{
+    display: inline;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.buttons{
+    position: absolute;
+    right: 34px;
+    top: 30px;
+}
+
+.buttons button{
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.btn{
+    border: none;
+    background-color: blue;
+    margin-right: 5px;
+}
+
+.btn1{
+    border: 2px solid white;
+}
+
+.content-left{
+    width: 50%;
+    height: 629px;
+    position: absolute;
+    left: 0px;
+    /* display: inline-block; */
+}
+
+.content-right{
+    width: 50%;
+    height: 629px;
+    position: absolute;
+    right: 0px;
+}
+
+.box{
+    width: 550px;
+    height: 500px;
+    border: 10px solid skyblue;
+    margin-top: 60px;
+    margin-left: 70px;
+    background-image: url(./assets/Screenshot\ 2026-02-17\ 145623.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

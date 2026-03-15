@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Navbar CSS */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+}
+
+.box{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-top: 7px;
+}
+
+.navi ul{
+    display: flex;
+    gap: 30px;
+}
+
+.navi ul li{
+    list-style: none;
+}
+
+.navi ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.navi ul li a:hover{
+    color: blue;
+}
+
+/* Footer CSS */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.data{
+    width: 55%;
+}
+
+.right-footer{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.call,.write,.follow{
+    text-align: center;
+}
+
+.follow .images img{
+    width: 20px;
+}

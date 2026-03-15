@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Class</title>
+</head>
+<body>
+    <!-- 
+        Math Function
+        : abs
+        : ceil : round off any value to the highest number
+        : floor : round off value to the lowest number
+        : random : create the random number b/w 0 to 1
+        : pi
+    -->
+
+    <script>
+        // let pi=Math.PI
+
+        // let a=-10
+        // let b=Math.abs(a) // it converts the negative value to positive
+
+        // let num=10.36
+        // let num1=10.96
+        // console.log(Math.ceil(num))
+        // console.log(Math.floor(num))
+
+        // let no=Math.ceil(Math.random()*10)
+        // console.log(no)
+
+        // Guessing Game
+
+        // let random=Math.ceil(Math.random()*100);
+        // let guess=parseInt(prompt("Enter the guess"))
+
+        // while(true){
+        //     if(guess==random){
+        //         console.log("Guessed the right number",guess);
+        //         break;
+        //     }
+        //     else if(guess<random){
+        //         guess=parseInt(prompt("Your guess is small!! Try Again"))
+        //     }
+        //     else if(guess>random){
+        //         guess=parseInt(prompt("Your guess is Large!! Try Again"))
+        //     }
+        //     else{
+        //         guess=parseInt(prompt("Guess is Wraong!! Try again"))
+        //     }
+        // }4
+
+        // What is string?
+        // String is a set of characters in "".It is based on zero base indexing
+
+        let name="Ayush";
+
+        // What is zero based indexing?
+        // It means that data is stored from count 0 at memory
+
+        // console.log(name[0])
+        // console.log(name[1])
+        // console.log(name[2])
+        // console.log(name[3])
+        // console.log(name[4])
+
+        // for(let i=0;i<name.length;i++){
+        //     console.log(name[i])
+        // }
+
+        // length : Brings out the length of the string
+
+        // toUpperCase()
+        // console.log(name.toUpperCase())
+
+        // // toLowerCase()
+        // console.log(name.toLowerCase())
+
+        // // trim: removes the extra spaces from starting and ending
+        // // console.log(name.trim())
+
+        // // slice(start,end-1)
+        // console.log(name.slice(0,4))
+
+        // console.log(name.replace("h","Q"))
+        // console.log(name.replaceAll("h","Q"))
+
+        // let full_name="Ayush&Srivastava"
+        // console.log(full_name.split("&"))
+
+        // // startsWith()
+        // console.log(name.startsWith("A"))
+
+        // // endsWith()
+        // console.log(name.endsWith("h"))
+
+        // What is Array?
+        // In js array is a data structure where any type of data is stored in contigious memory. Array also works on zero based indexing 
+
+        let arr=[10,90.78,"Ayush",true]
+
+        // for(let i=0;i<arr.length;i++){
+        //     console.log(arr[i])
+        // }
+
+        // To add & remove any element from the array , we have four methods:
+        // 1. push : add any element at the last of the array.
+        // 2. pop : remove the element from the end
+        // 3. unshift : add the element at the starting of the array.
+        // 4. shift : Remove the element from the starting. 
+
+        arr.push(100)
+        arr.pop()
+        arr.unshift(200)
+        arr.shift()
+        console.log(arr)
+        
+    </script>
+</body>
+</html>

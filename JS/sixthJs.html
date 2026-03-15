@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        1. Array & Object Destructing
+        2. Functions
+        3. Scopes
+        4. Introduction to DOM
+    -->
+
+    <script>
+      // Array Destructuring
+      // let [name,age,city,profession]=["Shubham",25,"Noida","Software Developer"]
+      // let [name,age,...detail]=["Shubham",25,"Noida","Software Developer"]
+
+      // console.log(name)
+      // console.log(age)
+      // console.log(city)
+      // console.log(profession)
+      // console.log(detail)
+
+      // Object Destructuring
+      // hee we will destructure object according to their key.
+      // let {name,...detail}={
+      //     name:"Ashustosh",
+      //     age:34,
+      //     position:"CTO",
+      //     city:"Banglore"
+      // }
+
+      // console.log(name)
+      // console.log(detail)
+
+      // What is function?
+      // Block of codes that is written to perform a particular task.
+      // Function is applicable only if it is called.
+
+      // syntax
+      // function func_name(){
+      // code
+      // }
+
+      // function greet(){
+      //     console.log("Hello Everyone")
+      // }
+
+      // greet()
+
+      // Type of scopes:
+      // 1. Block Scope means any value defined inside {} is only applicable to call inside {}.
+      // {
+      //    let a=10
+      // }
+      // console.log(a)
+
+      // 2. Global Scope means any value that is defined globally that can be called in any {}.
+      //   let b = 10;
+      //   {
+      //     console.log(b);
+      //   }
+
+      // 3. Lexical/Closures scope means that innerfunc can access value of outer function even after outerfunc has executed.
+    //   function outerFunc(){
+    //     let a=10
+    //     function innerFunc(){
+    //         let b=20
+    //         console.log(a)
+    //     }
+    //     innerFunc()
+    //     console.log(b)
+    //   }
+
+    //   outerFunc()
+
+    // Type of functions:
+    // 1. Normal Function
+
+    // 2. Parameter & Argument Function
+        // function sum(a,b){ // parameter
+        //     console.log(a+b)
+        // }
+        // sum(10,20)// arguments
+
+    // 3. Return Function : It returns the value to the function itself.
+        function sum(a,b){ // parameter
+            let c=a+b;
+            return c
+        }
+        // sum(10,10)
+        console.log(sum(10,10))
+    
+    // 4. Default Parameter Function : Their is a parameter that have default value.
+        function full_name(fname,lname="Sharma"){
+            console.log(fname,lname)
+        }
+    
+    // 5. Function Expression : It convert any variable to the function
+        let sub=function(a,b){
+            return a-b
+        }
+    
+    // 6. Arrow Function 
+        let mul=(a,b)=>{
+            return a*b
+        }
+    </script>
+  </body>
+</html>

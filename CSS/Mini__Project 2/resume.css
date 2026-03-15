@@ -1,0 +1,150 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Navbar CSS */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+}
+
+.box{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-top: 7px;
+}
+
+.navi ul{
+    display: flex;
+    gap: 30px;
+}
+
+.navi ul li{
+    list-style: none;
+}
+
+.navi ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.navi ul li a:hover{
+    color: blue;
+}
+
+#main{
+    width: 100%;
+    height: 3100px;
+    background-color: #E7DACE;
+}
+
+.wrapper{
+    max-width: 60%;
+    height: 3100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    display: flex;
+    width: 30%;
+    gap: 10px;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.blue-box{
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+    background-color: blue;
+}
+
+.exp-cv{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s all ease-in-out;
+}
+
+.cv button:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+    color: black;
+}
+
+.content-box{
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    margin-top: 50px;
+    display: flex;
+}
+
+.con-left{
+    width: 35%;
+    height: 450px;
+}
+.con-right{
+    width: 65%;
+    height: 450px;
+}
+
+.education-bar{
+    margin: 50px 0px;
+}
+
+/* Footer CSS */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.data{
+    width: 55%;
+}
+
+.right-footer{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.call,.write,.follow{
+    text-align: center;
+}
+
+.follow .images img{
+    width: 20px;
+}
