@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bg{
+        background-color: red;
+    }
+
+    .color{
+        color: white;
+    }
+</style>
+<body>
+    
+    <!-- <h1 class="bg">Hello Everyone</h1> -->
+    <input type="text">
+    <button onclick="dataHandle()">Print Name</button>
+
+    <script>
+        // getter(getAttribute) & setter(setAttribute)
+
+        // getter means to get the attribute of a tag.
+        // let h1=document.querySelector("h1")
+        // console.log(h1.getAttribute("class"))
+        
+        // h1.setAttribute("class","color") // setAttributes always overlaps the previous property.
+
+        // Classlist : add , remove , contains, toggle
+        // h1.classList.add("color") // it adds the class to the html element
+        // h1.classList.remove("bg") // it removes the class from html element
+        // console.log(h1.classList.contains("bg")) // it checks whether the class is present or not.
+        // h1.classList.toggle("bg") // it is a switch , if class is present it will remove & if it is remove it will add.
+        // h1.classList.toggle("bg")
+        // h1.classList.toggle("bg")
+
+        // Input handling & CLick Events
+        let inp=document.querySelector("input")
+        
+        // Whenever their is change in input it is handled by "onchange" event
+
+        function dataHandle(){
+            let p=document.createElement("p")
+            console.log(inp.value)
+            p.innerText=`My name is ${inp.value}`
+            document.querySelector("body").append(p)
+        }
+    </script>
+</body>
+</html>
