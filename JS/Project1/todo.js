@@ -5,9 +5,14 @@ let h1=document.querySelector("h1")
 
 let ul=document.createElement("ul")
 // let todo=[]
-
+let number=ul.children.length
+h1.innerText=`${number} Todo List`
 // h1.innerText=`${todo.length} Todo List`
 btn.addEventListener("click",()=>{
+    if(input.value<=""){
+        return alert("Cannot Create Empty Todo");
+        
+    }
     // todo.push(input.value)
     console.log(input.value)
     let li=document.createElement("li")
@@ -22,6 +27,12 @@ btn.addEventListener("click",()=>{
         todoC.classList.toggle("line-through")
     })
 
+    delBtn.addEventListener("click",()=>{
+        li.remove()
+        number=ul.children.length
+        h1.innerHTML=`${number} Todo List`
+    })
+
     li.append(todoC,delBtn)
     ul.append(li)
 
@@ -29,9 +40,9 @@ btn.addEventListener("click",()=>{
     li.style.gap="10px"
 
     input.value=""
-    let number=ul.children.length
+    
     console.log(number)
-
+    number=ul.children.length
     // h1.insertAdjacentElement("afterbegin",number)
     h1.innerText=`${number} Todo List`
 })

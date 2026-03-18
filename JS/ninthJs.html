@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">First Name : </label>
+        <input class="fname" type="text" placeholder="Enter First Name">
+        <br>
+        <label for="">Last Name : </label>
+        <input class="lname" type="text" placeholder="Enter Last Name">
+        <br>
+        <input type="submit">
+
+        <!--  -->
+    </form>
+    <table align="center" border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </table>
+
+    <script>
+        let form = document.querySelector("form")
+        let fname = document.querySelector(".fname")
+        let lname = document.querySelector(".lname")
+        let table = document.querySelector("table")
+
+        let data = [];
+
+        let h1 = document.createElement("h1")
+        document.querySelector("body").append(h1)
+        h1.style.display = "flex"
+        h1.style.justifyContent = "center";
+
+        (table.childElementCount <= 1) ?
+            h1.innerText = "No records Yet...." :
+            h1.remove()
+
+
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault()
+            let firstName = fname.value;
+            let lasttName = lname.value;
+
+            // console.log(firstName,lasttName)
+            data.push(firstName);
+            data.push(lasttName)
+
+            console.log(data)
+
+            let tr = document.createElement("tr");
+            for (let i = 0; i < data.length; i++) {
+                let td = document.createElement("td")
+                td.innerText = data[i]
+                tr.append(td)
+            }
+
+            table.append(tr);
+            (table.childElementCount <= 1) ?
+                h1.innerText = "No records Yet...." :
+                h1.remove()
+            data = []
+
+            fname.value=""
+            lname.value=""
+        })
+    </script>
+</body>
+
+</html>
