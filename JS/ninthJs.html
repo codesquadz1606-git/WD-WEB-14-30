@@ -19,10 +19,11 @@
 
         <!--  -->
     </form>
-    <table align="center" border="1" cellspacing="0" cellpadding="10">
+    <table align="center" cellspacing="0" cellpadding="10">
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th style="border: 2px solid black;">First Name</th>
+            <th style="border: 2px solid black;">Last Name</th>
+            <th style="border: none;"></th>
         </tr>
     </table>
 
@@ -60,14 +61,32 @@
             for (let i = 0; i < data.length; i++) {
                 let td = document.createElement("td")
                 td.innerText = data[i]
+                td.style.border="2px solid black"
                 tr.append(td)
             }
+
+            let btn=document.createElement("button")
+            btn.innerText="Delete"
+            let delBtnTd=document.createElement("td")
+            delBtnTd.append(btn)
+            tr.append(delBtnTd)
+
+            btn.addEventListener("click",()=>{
+                console.log(table.childElementCount)
+                tr.remove();
+                if(table.childElementCount<3){
+                    h1.innerText = "No records Yet...."
+                }
+            })
+            
 
             table.append(tr);
             (table.childElementCount <= 1) ?
                 h1.innerText = "No records Yet...." :
                 h1.remove()
             data = []
+
+            console.log(table.childElementCount)
 
             fname.value=""
             lname.value=""

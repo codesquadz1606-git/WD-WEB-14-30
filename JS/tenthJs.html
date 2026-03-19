@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+    }
+</style>
+<body>
+
+    <!-- <input type="text" name="" id="">
+
+    <div class="box"></div> -->
+
+    <input class="inpr" name="gender" type="radio" value="Female">Female
+    <input class="inpr" name="gender" type="radio" value="Male">Male
+
+    <button>Check Clicked Gender</button>
+    
+    <script>
+        // let box=document.querySelector(".box")
+        // let input=document.querySelector("input")
+        // input.addEventListener("keydown",(e)=>{
+        //     console.log(e.key)
+
+        //     if(e.key=="ArrowUp"){
+        //         box.style.top="300px"
+        //     }
+        //     else if(e.key=="ArrowDown"){
+        //         box.style.top="0px"
+        //     }
+        //     else if(e.key=="ArrowRight"){
+        //         box.style.left="300px"
+        //     }
+        //     else if(e.key=="ArrowLeft"){
+        //         box.style.left="0px"
+        //     }
+        // })
+
+
+        // box.addEventListener("keydown",(e)=>{
+        //     if(e.key)
+        // })
+
+        let btn=document.querySelector("button")
+        
+        btn.addEventListener("click",()=>{
+            let inpr=document.querySelector('input[name="gender"]:checked')
+            if(inpr){
+                console.log(inpr.value)
+            }
+            else{
+                console.log("Error")
+            }
+        })
+    </script>
+</body>
+</html>
