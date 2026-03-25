@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // What is Synchronous Programming?
+        // A code execution line by line , where browser doesn't have to wait.
+
+        // console.log("Hello")
+        // console.log("Hii")
+        // console.log("How are you?")
+
+        // What is Asynchronous Programming?
+        // In this code has some wait time, this code is handled by the browser.
+
+        // Is JS single threaded?
+        // JS is single threaded because it doesn't wait for anyone.
+
+        // setTimeout & setInterval
+        // setTimeout is a function which is executed after some time.
+        // console.log("Hello")
+        // setTimeout(()=>{
+        //     console.log("This setTimeout")
+        // },4000) // asynchronous programming is handled by browser.
+
+        // console.log("How are you?")
+
+        // setInterval is a function that execute on decided interval.
+        // let id=setInterval(()=>{
+        //     console.log("This is SetInterval")
+        // },5000)
+
+        // clearInterval(id) // it is used to clear the interval
+
+        // let value = 0;
+        // function print() {
+        //     let id = setInterval(() => {
+        //         console.log("This is SetInterval")
+        //         console.log("Hello")
+        //         value++;
+        //         if (value == 5) {
+        //             clearInterval(id)
+        //         }
+        //     }, 2000)
+
+        //     console.log("Hiii")
+        // }
+
+        // print()
+
+        // What is Call stack?
+        // It means I have measure the steps how code is working.
+
+        // function one(){
+        //     return 1;
+        // }
+
+        // function two(){
+        //     return one()+one()
+        // }
+
+        // function three(){
+        //     return two() +one()
+        // }
+
+        // three()
+
+        // callback hell
+        // Callback hell means a multiple calback one by one in nesting groups.
+
+        // server <--- data from frontend
+        // now while travelling the data to backend internet is the main role.
+
+        function dataSave(data,accept,reject){
+            let internetSpeed=Math.ceil(Math.random()*10);
+            if(internetSpeed>5){
+                accept(internetSpeed)
+            }
+            else{
+                reject(internetSpeed)
+            }
+        }
+
+        dataSave("RajKumar",(speed)=>{
+            console.log("Data Saved",speed)
+            dataSave("Tushar",(speed)=>{
+                console.log("Data 2 Saved",speed)
+                dataSave("Ayush",(speed)=>{
+                    console.log("Data 3 Saved",speed)
+                },(speed)=>{
+                    console.log("Data Reject",speed)
+                })
+            },(speed)=>{
+                console.log("Data Reject",speed)
+            })
+        },(speed)=>{
+            console.log("Data Reject! Low Speed",speed)
+        })
+    </script>
+</body>
+
+</html>
