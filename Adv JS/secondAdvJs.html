@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 300px;
+        height: 300px;
+        border: 10px solid black;
+    }
+</style>
+
+<body>
+
+    <div class="box">
+
+    </div>
+
+    <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
+    <script>
+        // Call back Hell
+
+        let box = document.querySelector(".box")
+
+        // function colorChange(color, time, nextcolor) {
+        //     setTimeout(() => {
+        //         box.style.backgroundColor = color
+        //         if (nextcolor) nextcolor()
+        //     }, time)
+        // }
+
+
+        // colorChange("red",3000,()=>{
+        //     colorChange("yellow",3000,()=>{
+        //         colorChange("green",1000)
+        //     })
+        // })
+
+        // What is Promise?
+        // reslove 
+        // reject
+
+        function colorChange(color, time) {
+            return new Promise((res,rej)=>{
+                    setTimeout(() => {
+                        box.style.backgroundColor = color
+                        res()
+                    }, time)
+            })
+        }
+
+        // How to handle this promise?
+        // then & catch method
+        // whenever you are returning as a promise, to handle the promise everytime use then.
+        // catch() is used single time as it can handle all the then failures.
+
+        // colorChange("red",2000)
+        // .then(()=>{
+        //     console.log("Red Filled")
+        //     return colorChange("yellow",2000)
+        // })
+        // .then(()=>{
+        //     console.log("Yellow Filled")
+        // })
+        // .catch(()=>{
+        //     console.log("Failed")
+        // })
+
+
+        // function dataSave(data){
+        //     return new Promise((res,rej)=>{
+        //         let internetSpeed=Math.ceil(Math.random()*10);
+        //         if(internetSpeed>5){
+        //             res(internetSpeed)
+        //         }
+        //         else{
+        //             rej(internetSpeed)
+        //         }
+        //     })
+        // }
+
+        // dataSave("Tushar")
+        // .then((res)=>{
+        //     console.log("Data 1 Saved",res)
+        //     return dataSave("Tarun")
+        // })
+        // .then((res)=>{
+        //     console.log("Data 2 Saved",res)
+        //     return dataSave("RajKumar")
+        // })
+        // .then((res)=>{
+        //     console.log("Data 3 Saved",res)
+        // })
+        // .catch((err)=>{
+        //     console.log("Error",err)
+        // })
+
+        // WHAT IS API?
+        // API stands for Application Programming Interface.
+        // Which return us the JSON data
+
+        // Two method to access the API's
+        // Method 1: fetch() in built method
+        // Method 2 : axios() it is a library
+
+
+        // fetch() is a promise
+
+        let url="https://catfact.ninja/fact"
+        // fetch(url)
+        // .then((res)=>{
+        //     console.log(res) // here fetch returns us the non-readable data
+        //     return res.json() // converted it into the json, it is also a promise
+        // })
+        // .then((res)=>{
+        //     console.log(res.fact)
+        // })
+        // .catch((err)=>{
+        //     console.log(err)
+        // })
+
+        let data=axios.get(url)
+
+        data
+        .then((res)=>{
+            console.log(res.data.fact)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+
+        // Diffrence b/w axios & fetch?
+        // fetch is in built method where we get data in non -readable format then we have to convert that in JSON format.
+        // Whereas axios is a library and bit fast method, here data is returned in json format.
+    </script>
+</body>
+
+</html>
