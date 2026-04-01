@@ -52,7 +52,15 @@ async function dataFetch(){
         addTocart.addEventListener("click",()=>{
             window.location.href="Cart.html"    
             let cart=JSON.parse(localStorage.getItem("mycart") || "[]");
-            cart.push(el)
+
+            let existing=cart.find((item)=>item.id===el.id);
+            if(existing){
+                existing.qty+=1;
+            }
+            else{
+
+                cart.push({...el,qty:1})
+            }
             localStorage.setItem("mycart",JSON.stringify(cart)) 
         })
 
@@ -60,4 +68,5 @@ async function dataFetch(){
     })
 }
 
-dataFetch()
+dataFetch();
+
